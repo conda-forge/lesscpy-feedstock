@@ -14,14 +14,15 @@ Summary: Python LESS compiler
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lesscpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lesscpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lesscpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lesscpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lesscpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lesscpy-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/lesscpy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/lesscpy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lesscpy/badges/version.svg)](https://anaconda.org/conda-forge/lesscpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lesscpy/badges/downloads.svg)](https://anaconda.org/conda-forge/lesscpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-lesscpy-green.svg)](https://anaconda.org/conda-forge/lesscpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lesscpy.svg)](https://anaconda.org/conda-forge/lesscpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lesscpy.svg)](https://anaconda.org/conda-forge/lesscpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lesscpy.svg)](https://anaconda.org/conda-forge/lesscpy) |
 
 Installing lesscpy
 ==================
