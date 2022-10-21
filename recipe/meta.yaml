@@ -1,5 +1,5 @@
 {% set name = "lesscpy" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ef058fb3fca077f0136222c415bc6d20fe256e92648ccbf4b3de874ba03b9b9d
+  sha256: 1045d17a98f688646ca758dff254e6e9c03745648e051a081b0395c3b77c824c
 
 build:
   noarch: python
