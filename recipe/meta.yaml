@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1045d17a98f688646ca758dff254e6e9c03745648e051a081b0395c3b77c824c
 
 build:
   noarch: python
   entry_points:
     - lesscpy = lesscpy.scripts.compiler:run
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - ply
     - six
 
@@ -41,6 +41,7 @@ test:
 
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/lesscpy/lesscpy
