@@ -1,5 +1,5 @@
 {% set name = "lesscpy" %}
-{% set version = "0.15.1" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1045d17a98f688646ca758dff254e6e9c03745648e051a081b0395c3b77c824c
+  sha256: 4f6b7f34c22c5ce137e7ee280dcb1984ade0d500b6dab591d4a4d84252d18de9
 
 build:
   noarch: python
   entry_points:
     - lesscpy = lesscpy.scripts.compiler:run
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
